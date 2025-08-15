@@ -70,7 +70,7 @@ const ComingSoonSection = () => {
           className="absolute bottom-32 left-16 animate-float"
           style={{ animationDelay: "2s" }}
         >
-          <Image height="100" width="100"  alt="icon" src="/25.png" />
+          <Image height="100" width="100" alt="icon" src="/25.png" />
         </div>
 
         {/* Onion Ring */}
@@ -83,7 +83,7 @@ const ComingSoonSection = () => {
             className="absolute top-40 left-20 animate-bounce"
             style={{ animationDelay: "1s", animationDuration: "4s" }}
           >
-            <Image height="100" width="100"  alt="icon" src="/26.png" />
+            <Image height="100" width="100" alt="icon" src="/26.png" />
           </div>
         </div>
 
@@ -92,12 +92,12 @@ const ComingSoonSection = () => {
           className="absolute top-20 right-20 animate-bounce"
           style={{ animationDelay: "2s", animationDuration: "4s" }}
         >
-          <Image height="60" width="60"  alt="icon" src="/26.png" />
+          <Image height="60" width="60" alt="icon" src="/26.png" />
         </div>
 
         {/* Fork and Knife */}
         <div className="absolute bottom-20 right-32 opacity-30">
-          <Image height="60" width="60"  alt="icon" src="/26.png" />
+          <Image height="60" width="60" alt="icon" src="/26.png" />
         </div>
       </div>
 
@@ -110,9 +110,8 @@ const ComingSoonSection = () => {
             <div className="relative">
               <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[700px] lg:h-[700px] rounded-full  flex items-center justify-center">
                 {/* Burger SVG Icon */}
-                <Image height="900" width="900"  alt="icon" src="/21.png" />
+                <Image height="900" width="900" alt="icon" src="/swtte.jpg" className='rounded-full w-[300px] h-[300px] lg:h-[650px] lg:w-[650px]' />
               </div>
-
             </div>
           </div>
 

@@ -1,6 +1,7 @@
+'use client'
 import React, { useState } from 'react';
 
-const ClientFeedbackSection = () => {
+const Testimonial = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const testimonials = [
@@ -203,4 +204,4 @@ const ClientFeedbackSection = () => {
   );
 };
 
-export default ClientFeedbackSection;
+export default Testimonial;

@@ -5,21 +5,21 @@ import RestaurantMenu from "./Components/Home/RestaurantMenu";
 import ComingSoonSection from "./Components/Home/ComingSoonSection";
 import FoodDeliveryLanding from "./Components/Home/FoodDeliveryLanding";
 import OurChefSection from "./Components/Home/OurChefSection";
-import ClientFeedbackSection from "./Components/Home/ClientFeedbackSection";
-import Footer from "./Components/Home/Footer";
-import Navbar from "./Components/Navbar";
+import Testimonial from "./Components/Home/Testimonial";
+import Footer from "./Components/Common/Footer";
+import Navbar from "./Components/Common/Navbar";
 export default function Home() {
   return (
     <ReactLenis root>
       <main className="">
-        <Navbar/>
+        <Navbar />
         <HomeHeader />
-        <RestaurantMenu/>
+        <RestaurantMenu />
         <ComingSoonSection />
-        <OurChefSection/>
-        <FoodDeliveryLanding/>
-        <ClientFeedbackSection/>
-        <Footer/>
+        <OurChefSection />
+        <FoodDeliveryLanding />
+        <Testimonial />
+        <Footer />
       </main>
     </ReactLenis>
   );

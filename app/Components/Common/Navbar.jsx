@@ -9,8 +9,9 @@ const Navbar = () => {
   // Navigation menu items
   const navItems = [
     { name: "Home", href: "/", hasDropdown: false },
-    { name: "Menu", href: "/menu", hasDropdown: true },
     { name: "About", href: "/about", hasDropdown: false },
+    { name: "Menu", href: "/menu", hasDropdown: true },
+
     { name: "Services", href: "/services", hasDropdown: true },
     { name: "Pages", href: "/pages", hasDropdown: true },
     { name: "Contact", href: "/contact", hasDropdown: false },

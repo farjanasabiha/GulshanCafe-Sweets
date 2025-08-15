@@ -23,7 +23,7 @@ const BlogCard = ({
         width={300}
           src={image}
           alt={title}
-          className="w-full h-48 sm:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
         />
         {/* Date Badge */}
         <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-2 text-center shadow-lg">

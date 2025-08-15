@@ -66,13 +66,10 @@ const blogPosts = [
 const Blog = () => {
   return (
 <div className='bg-white'>
-      <div className="container mx-auto max-w-7xl pb-24">
+      <div className="container mx-auto max-w-7xl pb-24 px-5">
       <div className="text-center mb-12">
         <div className="inline-block">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-red-500 font-script text-3xl md:text-4xl block mb-2">
-              Food Khan
-            </span>
             <span className="text-gray-800">Blog & </span>
             <span className="text-red-500">News</span>
           </h2>
@@ -81,11 +78,32 @@ const Blog = () => {
       </div>
 
       <Swiper
-        slidesPerView={3}
         spaceBetween={30}
         pagination={{ clickable: true }}
         modules={[Pagination]}
         className="mySwiper"
+                  breakpoints={{
+            0: {
+              slidesPerView: 1, // Mobile devices
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2, // Tablet devices
+              spaceBetween: 25,
+            },
+            1024: {
+              slidesPerView: 3, // Desktop
+              spaceBetween: 30,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
       >
         {blogPosts.map((post) => (
           <SwiperSlide key={post.id}>
