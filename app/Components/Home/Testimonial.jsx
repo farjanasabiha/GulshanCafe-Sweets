@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-
+import Image from "next/image";
 const Testimonial = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -9,26 +9,26 @@ const Testimonial = () => {
       id: 1,
       name: "Christ Deo",
       position: "CEO AzTech Ltd.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "/people.jpg",
       rating: 5,
-      text: "Food Khan is a great Restaurant from the University of Texas at Austin has been researching the benefits of frequent testing and the feedback leads to. He explains that in the history of the study."
+      text: "Food Khan is a great Restaurant from the University of Texas at Austin has been researching the benefits of frequent testing and the feedback leads to. He explains that in the history of the study.",
     },
     {
       id: 2,
       name: "Christ Deo",
       position: "CEO AzTech Ltd.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "/fish.jpg",
       rating: 5,
-      text: "Food Khan is a great Restaurant from the University of Texas at Austin has been researching the benefits of frequent testing and the feedback leads to. He explains that in the history of the study."
+      text: "Food Khan is a great Restaurant from the University of Texas at Austin has been researching the benefits of frequent testing and the feedback leads to. He explains that in the history of the study.",
     },
     {
       id: 3,
       name: "Sarah Johnson",
       position: "Marketing Director",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "/fish.jpg",
       rating: 5,
-      text: "Exceptional service and amazing food quality. The team at Food Khan consistently delivers outstanding dining experiences that exceed our expectations every single time."
-    }
+      text: "Exceptional service and amazing food quality. The team at Food Khan consistently delivers outstanding dining experiences that exceed our expectations every single time.",
+    },
   ];
 
   const nextSlide = () => {
@@ -96,11 +96,17 @@ const Testimonial = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <img 
+                  {/* <img 
                     src={testimonials[currentSlide].image}
                     alt={testimonials[currentSlide].name}
                     className="w-16 h-16 rounded-full object-cover border-4 border-red-100"
-                  />
+                  /> */}
+                  <Image
+                    src={testimonials[currentSlide].image}
+                    alt={testimonials[currentSlide].name}
+                    height={100}
+                    width={100}
+                    className="w-16 h-16 rounded-full object-cover border-4 border-red-100"/>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-2">

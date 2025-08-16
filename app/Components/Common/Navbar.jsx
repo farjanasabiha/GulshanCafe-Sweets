@@ -10,10 +10,13 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", href: "/", hasDropdown: false },
     { name: "About", href: "/about", hasDropdown: false },
-    { name: "Menu", href: "/menu", hasDropdown: true },
+    { name: "Cart", href: "/cart", hasDropdown: false },
+    { name: "Checkout", href: "/checkout", hasDropdown: false },
+    { name: "Menu", href: "/menu", hasDropdown: false },
+    // { name: "Menu", href: "/menu", hasDropdown: flase },
+    // { name: "Menu", href: "/menu", hasDropdown: true },
 
     { name: "Services", href: "/services", hasDropdown: true },
-    { name: "Pages", href: "/pages", hasDropdown: true },
     { name: "Contact", href: "/contact", hasDropdown: false },
   ];
 
@@ -76,7 +79,7 @@ const Navbar = () => {
                     </a>
 
                     {/* Dropdown Menu (placeholder) */}
-                    {item.hasDropdown && (
+                    {/* {item.hasDropdown && (
                       <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
                         <div className="py-2">
                           <a
@@ -99,7 +102,7 @@ const Navbar = () => {
                           </a>
                         </div>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 ))}
               </div>
