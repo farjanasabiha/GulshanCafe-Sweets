@@ -44,7 +44,7 @@ const ComingSoonSection = () => {
         {[...Array(100)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-yellow-400 opacity-8 rounded-full animate-pulse"
+            className="absolute w-1 h-1 bg-yellow-400 opacity-6 rounded-full animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -110,7 +110,13 @@ const ComingSoonSection = () => {
             <div className="relative">
               <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[700px] lg:h-[700px] rounded-full  flex items-center justify-center">
                 {/* Burger SVG Icon */}
-                <Image height="900" width="900" alt="icon" src="/swtte.jpg" className='rounded-full w-[300px] h-[300px] lg:h-[650px] lg:w-[650px]' />
+                <Image
+                  height="900"
+                  width="900"
+                  alt="icon"
+                  src="/about-us-image.png"
+                  className="rounded-full w-[300px] h-[300px] lg:h-[650px] lg:w-[650px]"
+                />
               </div>
             </div>
           </div>
@@ -119,9 +125,32 @@ const ComingSoonSection = () => {
           <div className="text-center lg:text-left space-y-8">
             {/* Coming Soon Text */}
             <div className="space-y-4">
-              <p className="text-red-500 font-medium text-lg tracking-wider animate-pulse">
+              <p className="text-red-500 font-semibold text-xl tracking-wider animate-pulse">
                 Coming Soon
               </p>
+              <div className="w-full flex justify-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 200 30"
+                  fill="none"
+                  className={`w-44 h-10 text-red-700`}
+                >
+                  {/* First line */}
+                  <path
+                    d="M5 12 Q100 -8 195 12"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="transparent"
+                  />
+                  {/* Second line (closer to the first) */}
+                  <path
+                    d="M5 17 Q100 -3 195 17"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="transparent"
+                  />
+                </svg>
+              </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl  font-bold text-white leading-tight">
                 DELICIOUS
                 <br />
@@ -135,62 +164,19 @@ const ComingSoonSection = () => {
             </p>
 
             {/* Countdown Timer */}
-            <div className="space-y-6">
-              {/* Timer */}
-              <div className="grid grid-cols-4 gap-4 max-w-md mx-auto lg:mx-0">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">
-                    {formatTime(timeLeft.days)}
-                  </div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">
-                    Days
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="text-red-500 text-3xl font-bold">:</div>
-                </div>
-
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">
-                    {formatTime(timeLeft.hours)}
-                  </div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">
-                    Hour
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="text-red-500 text-3xl font-bold">:</div>
-                </div>
-              </div>
-
-              {/* Second Row */}
-              <div className="grid grid-cols-4 gap-4 max-w-md mx-auto lg:mx-0">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">
-                    {formatTime(timeLeft.minutes)}
-                  </div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">
-                    Minutes
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-center">
-                  <div className="text-red-500 text-3xl font-bold">:</div>
-                </div>
-
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-2">
-                    {formatTime(timeLeft.seconds)}
-                  </div>
-                  <div className="text-gray-400 text-sm uppercase tracking-wider">
-                    Seconds
-                  </div>
-                </div>
-
-                <div></div>
-              </div>
+            <div className="">
+              <p className="text-sm text-gray-400 w-full lg:pr-20">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's stan dard dummy
+                text ever since the 1500s
+              </p>
+              <p className="text-sm text-gray-400 w-full lg:pr-20">
+                <br />
+                dard dummy text ever since the 1500s,when an unknown printer
+                took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap
+                into electronic typesetting.
+              </p>
             </div>
 
             <div className="pt-4">

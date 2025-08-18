@@ -220,34 +220,7 @@ const RestaurantMenu = () => {
       image: "tea.jpg",
       category: "Bakery",
     },
-    {
-      id: 7,
-      name: "Fresh Orange Juice",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis",
-      price: 5,
-      image: "kalojam.jpg",
-      category: "Drink",
-    },
-    {
-      id: 8,
-      name: "Pad Thai",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis",
-      price: 13,
-      image: "fuchka.jpg",
-      category: "Asian",
-    },
-    {
-      id: 9,
-      name: "Greek Salad",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis",
-      price: 11,
-      image:
-        "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=200&fit=crop",
-      category: "Salad",
-    },
+
   ];
 
   const filteredItems =

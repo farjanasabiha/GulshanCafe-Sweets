@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { FaCartPlus } from "react-icons/fa";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -9,14 +11,22 @@ const Navbar = () => {
   // Navigation menu items
   const navItems = [
     { name: "Home", href: "/", hasDropdown: false },
-    { name: "About", href: "/about", hasDropdown: false },
-    { name: "Cart", href: "/cart", hasDropdown: false },
-    { name: "Checkout", href: "/checkout", hasDropdown: false },
+    // { name: "About", href: "/about", hasDropdown: false },
     { name: "Menu", href: "/menu", hasDropdown: false },
+
+    { name: "Catering", href: "/", hasDropdown: false },
+    { name: "Services", href: "/", hasDropdown: false },
+
+    // { name: "Cart", href: "/cart", hasDropdown: false },
+    // { name: "Checkout", href: "/checkout", hasDropdown: false },
+
     // { name: "Menu", href: "/menu", hasDropdown: flase },
     // { name: "Menu", href: "/menu", hasDropdown: true },
 
-    { name: "Services", href: "/services", hasDropdown: true },
+    // { name: "Services", href: "/services", hasDropdown: true },
+    // { name: "Blog", href: "/", hasDropdown: false },
+
+
     { name: "Contact", href: "/contact", hasDropdown: false },
   ];
 
@@ -48,18 +58,18 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all h-24 duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all h-28 duration-300 items-center ${
           isScrolled
-            ? "bg-white/65 backdrop-blur-md shadow-lg"
-            : "bg-white shadow-sm"
+            ? "bg-black backdrop-blur-md shadow-lg"
+            : "bg-black shadow-sm"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 pt-5 sm:px-6">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="/" className="flex items-center">
-                <Image src="/logo.png" height={100} width={100} alt="Logo" />
+                <Image src="/logo.png" height={200} width={200} alt="Logo" />
               </a>
             </div>
 
@@ -70,7 +80,7 @@ const Navbar = () => {
                   <div key={item.name} className="relative group">
                     <a
                       href={item.href}
-                      className="text-gray-500 hover:text-red-500 px-3 py-2 text-lg font-bold transition-colors duration-200 flex items-center"
+                      className="text-white hover:text-red-500 px-3 py-2 text-lg font-bold transition-colors duration-200 flex items-center"
                     >
                       {item.name}
                       {item.hasDropdown && (
@@ -109,13 +119,16 @@ const Navbar = () => {
             </div>
 
             {/* CTA Button (Desktop) */}
-            <div className="hidden lg:block">
-              <a
-                href="/reservation"
-                className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-200 transform hover:scale-105"
-              >
-                Book Table
-              </a>
+            <div className="hidden lg:block ">
+              <div className="flex items-center gap-8">
+                <FaCartPlus className="text-white text-3xl" />
+                <a
+                  href="/reservation"
+                  className="bg-[linear-gradient(135deg,#ff6b35_0%,#f22e2c_100%)] text-white px-7 py-4 rounded-full font-semibold transition-transform duration-200 hover:scale-105"
+                >
+                  🍽️ Order Now
+                </a>
+              </div>
             </div>
 
             {/* Mobile menu button */}
@@ -219,7 +232,7 @@ const Navbar = () => {
           {/* Mobile Menu Footer */}
           <div className="absolute bottom-0 left-0 right-0 p-4 bg-gray-50 border-t border-gray-200">
             <p className="text-center text-sm text-gray-500">
-              © 2024 FoodKhan Restaurant
+              © 2025 Gulshan Cafe and Sweets
             </p>
           </div>
         </div>
