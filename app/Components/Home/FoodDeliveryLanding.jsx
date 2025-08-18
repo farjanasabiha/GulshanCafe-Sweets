@@ -25,7 +25,6 @@ const FoodDeliveryLanding = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
-
       <div className="relative overflow-hidden bg-white shadow-sm">
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -63,12 +62,11 @@ const FoodDeliveryLanding = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 lg:py-28">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Left Side - Food Image */}
           <div className="flex-1 relative">
             <div className="relative z-10">
               <img
-
                 src="/delivery-img.png"
                 alt="Delicious burger meal"
                 className="w-full max-w-md mx-auto"
@@ -97,10 +95,12 @@ const FoodDeliveryLanding = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-[55px] font-extrabold text-white leading-tight mb-6">
               <span className="text-gray-800">A Moments Of Delivered</span>
               <br />
-              <span className="text-red-500">On Right Time & Place</span>
+              <span className="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">
+                On Right Time & Place
+              </span>
             </h1>
 
             {/* Description */}

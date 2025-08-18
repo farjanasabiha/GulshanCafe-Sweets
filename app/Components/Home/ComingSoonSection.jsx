@@ -151,10 +151,13 @@ const ComingSoonSection = () => {
                   />
                 </svg>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl  font-bold text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl  font-extrabold text-white leading-tight">
                 DELICIOUS
                 <br />
-                BURGER <span className="text-orange-500">FOOD</span>
+                BURGER {' '}
+                <span className="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">
+                  FOOD
+                </span>
               </h1>
             </div>
 
