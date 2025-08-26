@@ -13,7 +13,7 @@ const SunzineGallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "tea.jpg",
+      image: "5cdbef9f-fe38-463b-83f0-9ff4d1ea518e.png",
       title: "Golden Hour",
       description: "Capturing the perfect moment",
       size: "large", // spans 2 columns
@@ -21,7 +21,7 @@ const SunzineGallery = () => {
     },
     {
       id: 2,
-      image: "tehari.jpg",
+      image: "b5809ce3-ac30-49e9-8780-18bfe945fee0.png",
       title: "Forest Bridge",
       description: "Journey through nature",
       size: "tall",
@@ -37,7 +37,7 @@ const SunzineGallery = () => {
     },
     {
       id: 4,
-      image: "kalojam.jpg",
+      image: "c4c96ea3-d02d-4e8c-b42d-400834b3a48b.png",
       title: "Culinary Art",
       description: "Food as visual poetry",
       size: "medium",
@@ -46,7 +46,7 @@ const SunzineGallery = () => {
 
     {
       id: 9,
-      image: "fishes.jpg",
+      image: "1c7ee4a7-5823-4052-93e7-3f2ac113c9fc.png",
       title: "Blue Serenity",
       description: "Peaceful moments",
       size: "small",
@@ -54,7 +54,7 @@ const SunzineGallery = () => {
     },
     {
       id: 10,
-      image: "coffee.jpg",
+      image: "33e8f9d5-b964-4fd7-a488-8053620e8d9a.png",
       title: "Tropical Vibes",
       description: "Paradise found",
       size: "tall",
@@ -62,7 +62,7 @@ const SunzineGallery = () => {
     },
     {
       id: 11,
-      image: "biriyani.jpg",
+      image: "51c22de6-0ce9-441b-8ef3-1d4ffb9ec371.png",
       title: "Ocean Dreams",
       description: "Endless horizons",
       size: "medium",
@@ -70,7 +70,7 @@ const SunzineGallery = () => {
     },
     {
       id: 12,
-      image: "chicken.jpg",
+      image: "maxresdefault.jpg",
       title: "Vintage Red",
       description: "Classic automotive",
       size: "medium",
@@ -78,7 +78,7 @@ const SunzineGallery = () => {
     },
     {
       id: 13,
-      image: "vagitable.jpg",
+      image: "Screenshot_26.png",
       title: "Gentle Touch",
       description: "Intimate moments",
       size: "medium",
@@ -86,15 +86,15 @@ const SunzineGallery = () => {
     },
     {
       id: 14,
-      image: "vagitable.jpg",
+      image: "7db9ca0d-7148-42cf-bc4c-364c462278d3.png",
       title: "Gentle Touch",
       description: "Intimate moments",
       size: "medium",
       category: "Emotion",
     },
     {
-      id: 14,
-      image: "vagitable.jpg",
+      id: 15,
+      image: "b2e7a63a-4636-4593-b47b-90a61b9511c8.png",
       title: "Gentle Touch",
       description: "Intimate moments",
       size: "medium",

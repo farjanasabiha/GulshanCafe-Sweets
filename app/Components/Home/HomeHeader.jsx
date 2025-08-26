@@ -382,7 +382,9 @@ const HomeHeader = () => {
                 <div className="w-12 h-12 rounded-full font-bold  bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-2xl">
                   🍽️
                 </div>
-                <div className="text-slate-300 text-lg mt-1">Family Recipes</div>
+                <div className="text-slate-300 text-lg mt-1">
+                  Family Recipes
+                </div>
               </div>
             </div>
           </div>
@@ -390,11 +392,11 @@ const HomeHeader = () => {
           {/* Right Visual */}
           <div className="animate-slide-in-right relative flex justify-center lg:justify-end">
             <Image
-              src="/21.png" // Change to your background image
+              src="/New Project.png" // Change to your background image
               alt="Banner"
-              width={500}
-              height={500}
-              className="w-80 h-80 md:w-96 md:h-96 lg:w-[600px] lg:h-[600px] rounded-fullrelative overflow-hidden"
+              width={570}
+              height={570}
+              className="w-80 h-80 md:w-96 md:h-96 lg:w-[570px] lg:h-[570px] rounded-full relative overflow-hidden"
             />
             {/* Enhanced Floating Food Items */}
             <FloatingFood
